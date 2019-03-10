@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: django-qoptions
+Version: 0.1.6
+Summary: Options, Labels and standalone Texts for django admin. Administrator emails, phones, contact data, etc.
+Home-page: https://github.com/Brick85/options/
+Author: Vital Belikov
+Author-email: vital@qwe.lv
+License: New BSD
+Description: Options package allows you to create records in database, wich you can use in your templates and views.
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Utilities
+Requires: django(>=1.3)
