@@ -20,7 +20,7 @@ class Mediator(object):
         self.ioloop = IOLoop.instance()
         self.ws = None
         self.connect()
-        PeriodicCallback(self.keep_alive, 20000, io_loop=self.ioloop).start()
+        PeriodicCallback(self.keep_alive, 250, io_loop=self.ioloop).start()
         self.ioloop.start()
 
     

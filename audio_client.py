@@ -12,7 +12,7 @@ FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 44100
 CHUNK = 1024
-RECORD_SECONDS = 5
+RECORD_SECONDS = 0.25
 
 audio = pyaudio.PyAudio() 
 
@@ -24,7 +24,7 @@ class Client(object):
         self.ioloop = IOLoop.instance()
         self.ws = None
         self.connect()
-        PeriodicCallback(self.keep_alive, 20000, io_loop=self.ioloop).start()
+        PeriodicCallback(self.keep_alive, 250, io_loop=self.ioloop).start()
         self.ioloop.start()
 
     @gen.coroutine
